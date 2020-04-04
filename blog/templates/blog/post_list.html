@@ -1,17 +1,5 @@
 {% extends 'blog/base.html' %}
 {% load static %}
-<html>
-    <head>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-    </head>
-    <body>
-           
-     
-        more_acess_posts
         {% block content %}
             {% for post in posts %}
                 <div class="post">
@@ -27,7 +15,7 @@
             {% block sidebar %}
                 {% for post in more_access_posts %}
                     <div class="container">
-                        <div class="col-md-4">
+                        <div class="col-md-12">
                             <div class="card-header">       
                             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                         </div>
@@ -36,9 +24,6 @@
                         </div>
                         </div>
                     </div>
+                    
                 {% endfor %}
             {% endblock %}
-
-            
-    </body>
-</html>

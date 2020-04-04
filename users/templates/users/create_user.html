@@ -1,0 +1,45 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block title %}Faça o login{% endblock %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+<div class="container">
+    <div class="col-md-6">
+    <div id="logbox">
+      <form id="signup" method="post" action=".">
+        {% csrf_token %}
+        
+        <h1>Create an account</h1>
+
+        <div class="form-group">
+            {{form.first_name}}
+        </div>
+
+        <div class="form-group">
+            {{form.last_name}}
+        </div>
+
+        <div class="form-group">
+            {{form.email}}
+        </div>
+
+        <div class="form-group">
+            {{form.username}}
+        </div>
+
+        <div class="form-group">
+            {{form.password1}}
+        </div>
+    
+        <div class="form-group">
+            {{form.password2}}
+        </div>
+    
+        <input type="submit" value="Sign me up!" class="inputButton"/>
+      </form>
+    </div>
+   </div>
+  </div>
+  {% endblock %}
