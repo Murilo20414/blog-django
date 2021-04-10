@@ -1,6 +1,6 @@
 # Projeto Blog em Django
 
-Pequeno blog feito em django com o objetivo de treinar o desenvolvimento de aplicaç_es web em Python 3.
+Pequeno blog feito em django com o objetivo de treinar o desenvolvimento de aplicacoes web em Python 3.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ Há uma pasta chamada "myvenv" dentro do projeto, e para utilizar as funcionalid
 
 ### Prerequisites
 
-O projeto faz uso de algumas funcionalidades de frameworks python. Antes de tudo, é necess_ario instalar o python em sua vers_ao 3.8 em conjunto com o gerenciador de pacotes pip, ap_s isso eh preciso executar "pip install requirements.txt".
+O projeto faz uso de algumas funcionalidades de frameworks python. Antes de tudo, é necessario instalar o python em sua versaao 3.8 em conjunto com o gerenciador de pacotes pip, apos isso eh preciso executar "pip install requirements.txt".
 ```
 pip install requirements.txt
 ```
