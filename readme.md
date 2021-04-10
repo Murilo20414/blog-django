@@ -1,6 +1,6 @@
 # Projeto Blog em Django
 
-Pequeno blog feito em django feito com objetivo de treinar o desenvolvimento de aplicaç_es web em Python 3.
+Pequeno blog feito em django com o objetivo de treinar o desenvolvimento de aplicaç_es web em Python 3.
 
 ## Getting Started
 
